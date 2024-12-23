@@ -7,7 +7,7 @@
     - corrector: Ce module met à disposition 
         - une classe PID permettant de réaliser des asservissements.
         - une classe Position permettant d'estimer la position grâce aux informations des encodeurs.
-    - motors: Ce sous-module utilie les sous-modules précédents afin de permettre un contrôle des moteurs.
+    - motors: Ce sous-module utilie les sous-modules précédents afin de permettre le contrôle des moteurs.
 
 ## Modules externes
 
