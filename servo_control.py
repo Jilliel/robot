@@ -18,23 +18,19 @@ class PID:
         self.error_sum = 0
         self.error_last = 0
     
-    def integrated(self, error: int) -> int:
-        self.error_sum += error
-        return self.Ki * self.error_sum
-
-    def derivative(self, error: int) -> int:
-        error_delta = error - self.error_last
-        self.error_last = error
-        return self.Kd * error_delta
-
-    def proportional(self, error: int) -> int:
-        return self.Kp * error
-    
     def correct(self, error: int) -> int:
         """
         Renvoie la consigne corrigée en fct de l'erreur
         """
-        return self.proportional(error) + self.integrated(error) + self.derivative(error)
+        error_delta = error - self.error_last
+        self.error_last = error
+        self.error_sum += error
+
+        prop = self.Kp * error
+        deriv = self.Kd * error_delta
+        integ = self.Ki * self.error_sum
+
+        return prop + deriv + integ
 
 
 class Position:
@@ -68,8 +64,3 @@ class Position:
         self.x += dx
         self.y += dy
         self.orientation += theta 
-
-if __name__ == "__main__":
-    pos = Position()
-    increment = (3, 6)
-    pos.update(*increment)

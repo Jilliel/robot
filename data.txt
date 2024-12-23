@@ -1,0 +1,5 @@
+hostname: robot.local
+mdp box: fontei*-securos-humilium6-sejuncta32
+user: pi
+mdp: raspberry
+
