@@ -1,5 +1,5 @@
 hostname: robot.local
-mdp box: fontei*-securos-humilium6-sejuncta32
 user: pi
+adresse ssh: pi@robot.local
 mdp: raspberry
 
