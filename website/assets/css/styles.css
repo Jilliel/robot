@@ -1,4 +1,13 @@
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13;
+.link {
+    color: #e8e8e8;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #e8e8e8;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #202124;
 }
