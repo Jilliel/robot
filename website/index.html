@@ -8,22 +8,29 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <a class="link" href="https://about.google/?fg=1">À propos</a>
-    <a class="link" href="https://store.google.com/FR?hl=fr-FR">Google Store</a>
-    <a class="link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
-    <a class="link" href="https://www.google.fr/imghp?hl=fr&ogbl">Images</a>
-
-    <div class="container_hc" style="margin-top: 200px">
+    <div class="container" style="margin-top: 10px; width: 100%">
+        <div class="container" style="width: 50%; margin-left: 10px; justify-content: left; align-items: center;">
+            <a class="link" href="https://about.google/?fg=1">À propos</a>
+            <a class="link" href="https://store.google.com/FR?hl=fr-FR">Google Store</a>
+        </div>
+        <div class="container" style="width: 50%; margin-right: 10px; justify-content: right; align-items: center;">
+            <a class="link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+            <a class="link" href="https://www.google.fr/imghp?hl=fr&ogbl">Images</a>
+            <button class="button_app"><img src="assets/images/app.png" style="height: 25px; width: auto;"></button>
+            <button class="button_logging">Connexion</button>
+        </div>
+    </div>
+    <div class="container" style="justify-content: center; margin-top: 180px">
         <img style="width: 275px; height: auto" src="assets/images/logo.png" alt="Google">
     </div>  
     <form method="GET">
-        <div class="container_hc">
+        <div class="container" style="justify-content: center">
             <div class="container_bar" style="margin-top: 25px">
                 <img src="assets/images/lense.png" alt="" style="height: 17px; width: auto; margin-right: 10px;">
                 <input class="text_input" type="text" id="search">
             </div>
         </div>
-        <div class="container_hc" style="margin-top: 30px">
+        <div class="container" style="justify-content: center; margin-top: 30px">
             <input class="button_react" type="submit" value="Recherche Google" style="margin-right:15px">
             <button class="button_react">J'ai de la chance</button style="margin-left:15px">
         </div>
