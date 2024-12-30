@@ -92,3 +92,24 @@ body {
 .button_app:hover {
     background-color: #ffffff1a;
 }
+
+.button_voc {
+    all: unset;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.button_lense {
+    all: unset;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
